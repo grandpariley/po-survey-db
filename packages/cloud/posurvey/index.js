@@ -1,6 +1,6 @@
-import MongoClient from 'mongodb';
+import { MongoClient } from 'mongodb';
 
-async function main(args) {
+export async function main(args) {
     const uri = process.env['DATABASE_URL'];
     console.log(args);
     let client = new MongoClient(uri);
@@ -21,5 +21,3 @@ async function main(args) {
         await client.close();
     }
 }
-
-module.exports.main = main;
