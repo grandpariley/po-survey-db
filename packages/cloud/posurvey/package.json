@@ -18,7 +18,7 @@
     "url": "https://github.com/grandpariley/po-survey-db/issues"
   },
   "homepage": "https://github.com/grandpariley/po-survey-db#readme",
-  "devDependencies": {
+  "dependencies": {
     "mongodb": "^5.0.1"
   }
 }
