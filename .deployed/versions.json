@@ -5,8 +5,8 @@
     "packageVersions": {},
     "actionVersions": {
       "cloud/posurvey": {
-        "digest": "f7f4df4ca58156587380a4caf07e5c7bdc0da43ac815a26f9ed87e0372691e40",
-        "version": "0.0.7"
+        "digest": "a2b4bb3cf7368aba4bbf133a188cece67bf0f2ad45751f000ddb2c8237eec583",
+        "version": "0.0.9"
       }
     },
     "webHashes": {}
