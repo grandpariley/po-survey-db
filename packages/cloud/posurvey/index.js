@@ -1,4 +1,4 @@
-const MongoClient = require('mongodb').MongoClient;
+import MongoClient from 'mongodb';
 
 async function main(args) {
     const uri = process.env['DATABASE_URL'];
@@ -21,3 +21,5 @@ async function main(args) {
         await client.close();
     }
 }
+
+module.exports.main = main;
