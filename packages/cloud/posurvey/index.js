@@ -1,14 +1,18 @@
 import { MongoClient } from 'mongodb';
 
 export async function main(args) {
-    console.log(args);
     let client = new MongoClient(process.env['DATABASE_URL']);
     try {
+        const insert = {
+            risk: args.risk,
+            short: args.short,
+            long: args.long,
+        }
         await client.connect();
         await client.db("posurvey")
             .collection("posurvey")
-            .insertOne(args);
-        console.log(`added ${JSON.stringify(args)} to database.`);
+            .insertOne(insert);
+        console.log(`added ${JSON.stringify(insert)} to database.`);
         return { ok: true };
     } catch (e) {
         console.error(e);
